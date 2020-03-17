@@ -1,0 +1,38 @@
+<html>
+<script>
+	var screenTaker;
+	const { exec } = require('child_process');
+	const path = require('path')
+	
+	function goOneScroting () {
+		exec(path.join(__dirname, '/scroting-path.sh'), (err, stdout, stderr) => {
+		  if (err) { 
+			  console.log("Couldn't execute..."); 
+		      return; 
+		  }
+		  console.log(`stdout: ${stdout}`);
+		  console.log(`stderr: ${stderr}`);
+		});
+	}
+	
+	function record() {
+		var periodOfTakes = document.getElementById("period").value * 1000;			
+		screenTaker = setInterval(goOneScroting, periodOfTakes);	
+		document.getElementById("record").disabled = true;
+		document.getElementById("pause").disabled = false;
+	}
+	
+	function pause() {
+		clearInterval(screenTaker);
+		document.getElementById("record").disabled = false;
+		document.getElementById("pause").disabled = true;
+	}
+
+</script>
+
+<body style="background-color: #AAAAAA;">
+	<input id="period" type="text" value="0.5" size="4" style="font-family: arial; font-size: 22px;" >
+	<button id="record" onclick="record();" style="font-family: arial; font-size: 22px;">Record</button>
+	<button id="pause" disabled onclick="pause();" style="font-family: arial; font-size: 22px;">Pause</button>
+</body>
+</html>
