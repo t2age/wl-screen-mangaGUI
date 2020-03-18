@@ -32,5 +32,12 @@ GUI version of Screen-Manga Screenshot Sequence
   
 ---
 <img src="img/screenMangaGUI-010.png" width=640px;/>
-    
   
+  
+---
+  
+**HOWTO in Screenshot Sequence**  
+Take look inside folder ANIME-HOWTO, for a screenshot sequence in anime style...  
+  
+  
+ .
