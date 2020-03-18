@@ -34,6 +34,8 @@ The CLI, terminal version is here: https://github.com/t2age/wl-screen-manga
 ---
 <img src="img/screenMangaGUI-010.png" width=640px;/>
   
+---
+<img src="img/screenMangaGUI-011.png" width=640px;/>  
   
 ---
   
