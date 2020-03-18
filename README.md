@@ -1,6 +1,7 @@
-# wl-screen-mangaGUI
+# WL-Screen-MangaGUI
 GUI version of Screen-Manga Screenshot Sequence
   
+The CLI, terminal version is here: https://github.com/t2age/wl-screen-manga  
   
 **Visual Tutorial HowTo**  
   
